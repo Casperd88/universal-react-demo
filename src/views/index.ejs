@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Isomorphic Application</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="root"><% if (typeof html !== 'undefined') { %><%-html%><% } %></div>
+    <% if (typeof html !== 'undefined') { %>
+      <script type="text/javascript" src="//localhost:8080/bundle.js"></script>
+    <% } %>
+  </body>
+</html>
