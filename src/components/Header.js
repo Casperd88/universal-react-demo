@@ -12,7 +12,7 @@ export const Header = connect(
 )(({count, increment, decrement}) => (
     <div className="row">
       <div className="col-md-6">
-        <h1>Hello React Universe!</h1>
+        <h1>Universal React Demo</h1>
         <Link to="/">Home</Link> | <Link to="/contact">Contact</Link>
       </div>
       <div className="col-md-6 text-right">
